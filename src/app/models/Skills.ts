@@ -1,4 +1,4 @@
-export class Skills {
+export interface Skills {
     id: number
     title:string 
     img:string

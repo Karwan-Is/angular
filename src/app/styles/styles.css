@@ -74,7 +74,7 @@ nav ul .nav-logo li {
   width: 140px;
   height: 140px;
   margin: 0 auto;
-  border-radius: 70px;
+  border-radius: 25px 50px;
 }
 .main-container .skills .skill .html {
   color: #e34b21;
@@ -99,6 +99,32 @@ nav ul .nav-logo li {
 }
 .main-container .skills .skill .anguler {
   color: #a6120d;
+}
+
+.bottom-banner {
+  width: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.mail input {
+  font-size: 20px;
+  border: #222222 1px solid;
+  padding: 5px;
+}
+.mail button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #0e3352;
+  color: #ffffff;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 footer {
