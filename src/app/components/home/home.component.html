@@ -1,0 +1,14 @@
+<div class="main-container">
+    <div class="banner">
+        <img src="../../../assets/images/top-banner.jpg" alt="banner">
+    </div>
+
+    <h1 class="title">Junior Web Developer In London</h1>
+    <h2 class="skills-title">SKILLS</h2>
+    <ul class="skills">
+        <li class="skill" *ngFor="let skill of skills">
+            <img [src]="skill.img" alt="">
+            <p [class]="skill.className">{{skill.title}}</p>
+        </li>
+    </ul>
+</div>

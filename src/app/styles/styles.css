@@ -1,0 +1,109 @@
+body, header, main, div, article, section, footer, img, ul, li, a, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+nav ul {
+  display: flex;
+  background-color: #0e3352;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 16px 20px;
+  text-align: center;
+}
+nav ul li :hover {
+  background-color: #0a2b46;
+}
+nav ul .nav-items {
+  width: 75%;
+}
+nav ul .nav-items li {
+  width: 12%;
+}
+nav ul .nav-logo {
+  width: 25%;
+}
+nav ul .nav-logo li {
+  width: 100%;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+.main-container .title {
+  text-align: center;
+  padding: 30px 0;
+}
+.main-container .skills-title {
+  text-align: center;
+  padding: 20px 0;
+}
+.main-container .skills {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.main-container .skills .skill {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 20px 0;
+}
+.main-container .skills .skill p {
+  text-align: center;
+  padding: 15px 0;
+}
+.main-container .skills .skill img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border-radius: 70px;
+}
+.main-container .skills .skill .html {
+  color: #e34b21;
+}
+.main-container .skills .skill .css {
+  color: #0076bc;
+}
+.main-container .skills .skill .js {
+  color: #efda4d;
+}
+.main-container .skills .skill .node {
+  color: #221c20;
+}
+.main-container .skills .skill .mongo {
+  color: #3b291f;
+}
+.main-container .skills .skill .react {
+  color: #61dbfb;
+}
+.main-container .skills .skill .vue {
+  color: #42b883;
+}
+.main-container .skills .skill .anguler {
+  color: #a6120d;
+}
+
+footer {
+  padding: 16px 20px;
+  text-align: center;
+  background-color: #0e3352;
+  color: #ffffff;
+}
