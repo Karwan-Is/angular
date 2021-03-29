@@ -8,7 +8,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { SkillsComponent } from './components/skills/skills.component';
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
+  { path: "", component: HomeComponent },
   { path: "skills", component: SkillsComponent },
   { path: "about", component: AboutComponent },
   { path: "contact-us", component: ContactComponent },

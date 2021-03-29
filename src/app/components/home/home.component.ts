@@ -57,9 +57,9 @@ export class HomeComponent implements OnInit {
       },
       {
         id: 8,
-        title: "Anguler",
-        img: "assets/images/anguler.jpg",
-        className: "anguler"
+        title: "Angular",
+        img: "assets/images/angular.jpg",
+        className: "angular"
       }
     ]
   }

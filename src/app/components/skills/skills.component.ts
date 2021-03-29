@@ -5,6 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './skills.component.html'
 })
 export class SkillsComponent implements OnInit {
+  username = "";
+
+  showUser(){
+    console.log(this.username);
+  }
 
   constructor() { }
 
