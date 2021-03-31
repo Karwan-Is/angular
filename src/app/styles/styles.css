@@ -45,59 +45,60 @@ nav ul .nav-logo li {
   width: 100%;
 }
 
-.main-container .title {
+.main-container .home-title {
   text-align: center;
   padding: 30px 0;
 }
-.main-container .skills-title {
+.main-container .home-skills-title {
   text-align: center;
   padding: 20px 0;
 }
-.main-container .skills {
+.main-container .home-skills {
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-.main-container .skills .skill {
+.main-container .home-skills .home-skill {
   display: flex;
   flex-direction: column;
   width: 25%;
   margin: 20px 0;
 }
-.main-container .skills .skill p {
+.main-container .home-skills .home-skill p {
   text-align: center;
   padding: 15px 0;
 }
-.main-container .skills .skill img {
+.main-container .home-skills .home-skill img {
+  display: block;
   width: 140px;
   height: 140px;
   margin: 0 auto;
   border-radius: 25px 50px;
 }
-.main-container .skills .skill .html {
+.main-container .home-skills .home-skill .html {
   color: #e34b21;
 }
-.main-container .skills .skill .css {
+.main-container .home-skills .home-skill .css {
   color: #0076bc;
 }
-.main-container .skills .skill .js {
+.main-container .home-skills .home-skill .js {
   color: #efda4d;
 }
-.main-container .skills .skill .node {
+.main-container .home-skills .home-skill .node {
   color: #221c20;
 }
-.main-container .skills .skill .mongo {
+.main-container .home-skills .home-skill .mongo {
   color: #3b291f;
 }
-.main-container .skills .skill .react {
+.main-container .home-skills .home-skill .react {
   color: #61dbfb;
 }
-.main-container .skills .skill .vue {
+.main-container .home-skills .home-skill .vue {
   color: #42b883;
 }
-.main-container .skills .skill .anguler {
+.main-container .home-skills .home-skill .anguler {
   color: #a6120d;
 }
 
@@ -128,11 +129,39 @@ nav ul .nav-logo li {
 }
 
 .skills {
-  height: 723.5px;
+  margin-bottom: 150px;
 }
-.skills h1 {
-  padding: 20px 0;
+.skills .skills-title {
+  padding: 50px 0;
   text-align: center;
+}
+
+.skills-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 28% 28% 28%;
+  grid-gap: 5%;
+}
+.skills-wrapper article .skill-image {
+  display: block;
+  border: gray 1px solid;
+  border-radius: 10px;
+}
+.skills-wrapper article .skill-image img {
+  display: block;
+  width: 90%;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.skills-wrapper article h3 {
+  margin-top: 15px;
+  text-align: justify;
+}
+.skills-wrapper article h3 span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
 }
 
 .about {

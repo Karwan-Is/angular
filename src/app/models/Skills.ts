@@ -1,5 +1,5 @@
 export interface Skills {
-    id: number
+    id: number 
     title:string 
     img:string
     className: string

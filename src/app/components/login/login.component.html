@@ -1,19 +1,15 @@
 <div class="login form">
     <h1 class="title">Login</h1>
-    <form action="#" class="form-wrapper">
+    <form [formGroup]="loginFormGroup" class="form-wrapper">
         <div class="form-items">
             <label for="email">Email</label>
-            <input minlength="6" maxlength="20" required ngModel name="email" #email1="ngModel" (change)="log(email1)" type="text" placeholder="Email...">
-            <div *ngIf="email1.touched && !email1.valid">
-                <div *ngIf="email1.errors.required">email is required</div>
-                <div *ngIf="email1.errors.minlength">email must be longer than {{email1.errors.minlength.requiredLength}} characters</div>
-                <div *ngIf="email1.errors.maxlength">email must be shorter than 20 characters</div>
-            </div>
+            <input formControlName="emailValue" name="email" type="text" placeholder="Email...">
         </div>
         <div class="form-items">
             <label fro="password">Password</label>
             <input type="text" name="password" placeholder="Password...">
         </div>
-        <button>Login</button>
+        <p>{{loginFormGroup.get('emailValue').status}}</p>
+        <button (click)="handleClick()">Login</button>
     </form>
 </div>

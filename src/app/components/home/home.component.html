@@ -3,18 +3,20 @@
         <img src="assets/images/top-banner.jpg" alt="banner">
     </div>
 
-    <h1 class="title">Junior Web Developer In London</h1>
-    <h2 class="skills-title">SKILLS</h2>
-    <ul class="skills">
-        <li class="skill" *ngFor="let skill of skills">
-            <img [src]="skill.img" alt="">
-            <p [class]="skill.className">{{skill.title}}</p>
+    <h1 class="home-title">Junior Web Developer In London</h1>
+    <h2 class="home-skills-title">SKILLS</h2>
+    <ul class="home-skills">
+        <li class="home-skill" *ngFor="let skill of skills; index as i">
+            <div *ngIf="i < 8" >
+                <img [src]="skill.img" alt="">
+                <p [class]="skill.className">{{skill.title}}</p>
+            </div>
         </li>
     </ul>
 </div>
 
-<div class="bottom-banner" >
-    <img src="assets/images/bottom-banner.jpg" alt="bottom banner"/>
+<div class="bottom-banner">
+    <img src="assets/images/bottom-banner.jpg" alt="bottom banner" />
 </div>
 
 <div class="mail">

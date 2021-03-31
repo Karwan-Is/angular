@@ -2,21 +2,21 @@
 
 .main-container{
     
-    .title{
+    .home-title{
         text-align: center;
         padding: 30px 0;
     }
-    .skills-title{
+    .home-skills-title{
         text-align: center;
         padding: 20px 0;
     }
-    .skills{
+    .home-skills{
         width: 80%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        .skill{
+        .home-skill{
             display: flex;
             flex-direction: column;
             width: 25%;
@@ -26,6 +26,7 @@
                 padding: 15px 0;
             }
             img{
+                display: block;
                 width: 140px;
                 height: 140px;
                 margin: 0 auto;

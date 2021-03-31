@@ -1,7 +1,37 @@
 .skills{
-    height: 723.5px;
-    h1{
-        padding: 20px 0;
+    margin-bottom: 150px;
+    .skills-title{
+        padding: 50px 0;
         text-align: center;
+    }
+}
+
+.skills-wrapper{
+    width: 1000px;
+    margin:  0 auto;
+    display: grid;
+    grid-template-columns: 28% 28%  28% ;
+    grid-gap: 5%;
+    article{
+        .skill-image{
+            display: block;
+            border: gray 1px solid;
+            border-radius: 10px;
+            img{
+                display: block;
+                width: 90%;
+                padding: 10px 0;
+                margin: 0 auto;
+            }
+        }
+        h3{
+            margin-top: 15px;
+            text-align: justify;
+            span{
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                font-size: 14px;
+            }
+        }
     }
 }

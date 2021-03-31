@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
+import { SkillsService } from '../../services/skills.service'
 
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html'
 })
 export class SkillsComponent implements OnInit {
-  username = "";
 
-  showUser(){
-    console.log(this.username);
-  }
+  skills: any
 
-  constructor() { }
+  constructor(private skillsService: SkillsService) { }
 
   ngOnInit(): void {
+    this.skillsService.listSkills().subscribe(data => {
+      this.skills = data
+    });
   }
-
 }
