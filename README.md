@@ -8,4 +8,4 @@ then you can run:
 
 This is the link to see it online
 
-https://karwan-is.github.io/angular/home
+https://karwan-is.github.io/angular/

@@ -7,9 +7,8 @@
         </div>
         <div class="form-items">
             <label fro="password">Password</label>
-            <input type="text" name="password" placeholder="Password...">
+            <input formControlName="passwordValue" type="password" name="password" placeholder="Password...">
         </div>
-        <p>{{loginFormGroup.get('emailValue').status}}</p>
         <button (click)="handleClick()">Login</button>
     </form>
 </div>

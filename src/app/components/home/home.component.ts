@@ -12,7 +12,11 @@ export class HomeComponent implements OnInit {
   constructor(private skillsService: SkillsService) { }
 
   ngOnInit(): void {
-    this.skillsService.listSkills().subscribe( data =>{
+    // this.skillsService.listSkills().subscribe( data =>{
+    //   this.skills = data
+    // })
+
+    this.skillsService.getSkills().subscribe( data =>{
       this.skills = data
     })
   }
