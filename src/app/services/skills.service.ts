@@ -11,9 +11,9 @@ export class SkillsService {
 
   constructor(private httpClient: HttpClient) { }
 
-  listSkills() {
-    return this.httpClient.get('http://localhost:4008/skills')
-  }
+  // listSkills() {
+  //   return this.httpClient.get('http://localhost:4008/skills')
+  // }
 
   getSkills() {
     return this.httpClient.get('assets/skills.json')
