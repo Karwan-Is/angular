@@ -1,0 +1,69 @@
+[
+    {
+        "id": 1,
+        "title": "Screen",
+        "tools": [
+            "React",
+            "Node",
+            "Sass",
+            "MongoDB",
+            "JWT"
+        ],
+        "avatar": "assets/images/react.jpg",
+        "images": [
+            "assets/images/html.jpg"
+        ],
+        "details": "html"
+    },
+    {
+        "id": 2,
+        "title": "Hairdresser",
+        "tools": [
+            "React",
+            "Sass"
+        ],
+        "avatar": "assets/images/react.jpg",
+        "images": [
+            "assets/images/html.jpg"
+        ],
+        "details": "html"
+    },
+    {
+        "id": 3,
+        "title": "Vue",
+        "tools": [
+            "Vue"
+        ],
+        "avatar": "assets/images/vue.jpg",
+        "images": [
+            "assets/images/html.jpg"
+        ],
+        "details": "html"
+    },
+    {
+        "id": 4,
+        "title": "React",
+        "tools": [
+            "React",
+            "Sass"
+        ],
+        "avatar": "assets/images/react.jpg",
+        "images": [
+            "assets/images/html.jpg"
+        ],
+        "details": "html"
+    },
+    {
+        "id": 5,
+        "title": "Angular",
+        "tools": [
+            "Angular",
+            "Sass"
+        ],
+        "avatar": "assets/images/angular.jpg",
+        "images": [
+            "assets/images/html.jpg"
+        ],
+        "details": "html"
+    }
+]
