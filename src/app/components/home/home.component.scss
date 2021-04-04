@@ -1,0 +1,113 @@
+@import "~@angular/material/theming";
+
+.banner {
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.title {
+    margin: 30px 0;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: $nav-hover;
+}
+
+.skills {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 22% 22% 22% 22%;
+    grid-column-gap: 4%;
+    grid-row-gap: 30px;
+    margin-bottom: 50px;
+    mat-card-title {
+        text-align: center;
+        padding-top: 15px;
+        font-size: large;
+    }
+    img {
+        display: block;
+        width: 95%;
+        margin: 0 auto;
+        border-radius: 25px;
+    }
+    .html {
+        color: $html-color;
+    }
+    .css {
+        color: $css-color;
+    }
+    .js {
+        color: $js-color;
+    }
+    .node {
+        color: $node-color;
+    }
+    .mongo {
+        color: $mongo-color;
+    }
+    .react {
+        color: $react-color;
+    }
+    .vue {
+        color: $vue-light-color;
+    }
+    .anguler {
+        color: $anguler-dark-color;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .skills {
+        width: 80%;
+        grid-template-columns: 48% 48%;
+        grid-template-rows: 22% 22% 22% 22%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .title{
+        font-size: 20px;
+    }
+    .skills {
+        width: 70%;
+        grid-template-columns: 100%;
+        grid-row-gap: 50px;
+        mat-card-title{
+            font-size: 20px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .title{
+        width: 350px;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+    .skills {
+        width: 350px;
+        .skill{
+            width: 70%;
+            margin: 0 auto;
+        }
+        mat-card-title{
+            font-size: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .banner{
+        width: 350px;
+    }
+}

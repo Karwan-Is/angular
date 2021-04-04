@@ -1,13 +1,13 @@
 [
     {
         "id": 1,
-        "title": "HTML",
+        "title": "HTML5",
         "img": "assets/images/html.jpg",
         "className": "html"
     },
     {
         "id": 2,
-        "title": "CSS",
+        "title": "CSS3",
         "img": "assets/images/css.jpg",
         "className": "css"
     },
@@ -49,7 +49,7 @@
     },
     {
         "id": 9,
-        "title": "Authentication and Authorization",
+        "title": "User Auth",
         "img": "assets/images/auth.jpg",
         "className": "auth"
     }

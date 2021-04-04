@@ -1,0 +1,23 @@
+.about{
+    width: 600px;
+    margin: 0 auto;
+    height: 590px;
+    .about-wrapper{
+        margin-top: 100px;
+        p{
+            text-align: justify;
+        }
+    }
+}
+
+@media screen and (max-width:700px){
+    .about{
+        width: 450px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .about{
+        width: 300px;
+    }
+}

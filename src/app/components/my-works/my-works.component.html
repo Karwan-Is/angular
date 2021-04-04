@@ -1,0 +1,18 @@
+<div class="skills">
+    <mat-card *ngFor="let work of works; index as i" class="example-card">
+        <mat-card-header>
+            <img [src]="work.avatar" mat-card-avatar>
+            <mat-card-title>{{work.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image [src]="work.avatar" [alt]="work.title">
+        <mat-card-content>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolor reiciendis quam velit eaque
+                laudantium optio.
+            </p>
+        </mat-card-content>
+        <mat-card-actions>
+            <a mat-button [routerLink]="detailsLink + work.id">Read More...</a>
+        </mat-card-actions>
+    </mat-card>
+</div>

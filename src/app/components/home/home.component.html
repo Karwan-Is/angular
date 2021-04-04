@@ -1,25 +1,16 @@
-<div class="main-container">
-    <div class="banner">
+<div class="home">
+    <mat-card class="banner">
         <img src="assets/images/top-banner.jpg" alt="banner">
+    </mat-card>
+    <h1 class="title">Junior Web Developer In London</h1>
+    <h1 class="title">Skills</h1>
+
+    <div class="skills">
+        <div class="skill" *ngFor="let skill of skills; index as i">
+            <mat-card class="example-card" *ngIf="i < 8">
+                <img [src]="skill.img" [alt]="skill.className">
+                <mat-card-title [class]="skill.className">{{skill.title}}</mat-card-title>
+            </mat-card>
+        </div>
     </div>
-
-    <h1 class="home-title">Junior Web Developer In London</h1>
-    <h2 class="home-skills-title">SKILLS</h2>
-    <ul class="home-skills">
-        <li class="home-skill" *ngFor="let skill of skills; index as i">
-            <div *ngIf="i < 8" >
-                <img [src]="skill.img" alt="">
-                <p [class]="skill.className">{{skill.title}}</p>
-            </div>
-        </li>
-    </ul>
-</div>
-
-<div class="bottom-banner">
-    <img src="assets/images/bottom-banner.jpg" alt="bottom banner" />
-</div>
-
-<div class="mail">
-    <input type="text" placeholder="Email ...">
-    <button>Subscribe</button>
 </div>

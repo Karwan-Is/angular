@@ -1,0 +1,13 @@
+<div class="work-details" *ngFor="let work of works; index as i">
+    <div *ngIf="work.id == id" class="example-card">
+        <div class="work-logo">
+            <img [src]="work.avatar" [alt]="work.title">
+        </div>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dolor reiciendis quam velit eaque
+                laudantium optio.
+            </p>
+        </div>
+    </div>
+</div>

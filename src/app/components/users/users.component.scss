@@ -1,0 +1,38 @@
+.user {
+    height: 570px;
+    width: 400px;
+    margin: 60px auto;
+    h2 {
+        text-align: center;
+    }
+}
+
+form {
+    margin-bottom: 60px;
+    .example-full-width {
+        width: 100%;
+        margin: 15px 0;
+    }
+
+    .buttons {
+        display: flex;
+        margin-top: 15px;
+        justify-content: space-around;
+        button {
+            width: 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .user{
+        width: 300px;
+    }
+    form{
+        .buttons{
+            button{
+                width: 100px;
+            }
+        }
+    }
+}

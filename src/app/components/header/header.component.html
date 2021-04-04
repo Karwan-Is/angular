@@ -1,17 +1,15 @@
 <header>
-    <nav>
-        <ul>
-            <div class="nav-logo">
-                <li><a routerLink="">KI</a></li>
-            </div>
-            <div class="nav-items">
-                <li><a routerLink="">Home</a></li>
-                <li><a routerLink="skills">Skills</a></li>
-                <li><a routerLink="about">About</a></li>
-                <li><a routerLink="contact-us">Contact Us</a></li>
-                <li><a routerLink="login">Login</a></li>
-                <li><a routerLink="register">Register</a></li>
-            </div>
-        </ul>
+    <nav mat-tab-nav-bar mat-align-tabs="center">
+        <a mat-tab-link routerLink="" class="example-spacer">
+            KI
+        </a>
+        <a mat-tab-link *ngFor="let link of links; index as i" (click)="activeLink = i" [active]="activeLink == i"
+            [routerLink]="link.route">
+            {{link.title}}
+        </a>
+        <span class="example-spacer"></span>
+        <a mat-tab-link (click)="activeLink = links[4]" [active]="activeLink == links[4]" routerLink="user">
+            <mat-icon>account_circle</mat-icon>
+        </a>
     </nav>
 </header>
