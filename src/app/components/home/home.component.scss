@@ -7,16 +7,16 @@
     }
 }
 
-.title {
-    margin: 30px 0;
+.title, .skills-title {
     padding: 20px 0;
+    margin: 30px 0;
     text-align: center;
     font-weight: bold;
     font-size: 30px;
     color: $nav-hover;
 }
 
-.skills {
+.skills-wrapper {
     width: 90%;
     margin: 0 auto;
     display: grid;
@@ -56,8 +56,8 @@
     .vue {
         color: $vue-light-color;
     }
-    .anguler {
-        color: $anguler-dark-color;
+    .angular {
+        color: $angular-dark-color;
     }
 }
 
@@ -66,21 +66,25 @@
         font-size: 25px;
     }
 
-    .skills {
+    .skills-wrapper {
         width: 80%;
         grid-template-columns: 48% 48%;
-        grid-template-rows: 22% 22% 22% 22%;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .title{
+    .title, .skills-title{
         font-size: 20px;
     }
-    .skills {
+    .title{
+        margin-bottom: 0;
+    }
+    .skills-title{
+        margin-top: 0;
+    }
+    .skills-wrapper {
         width: 70%;
         grid-template-columns: 100%;
-        grid-row-gap: 50px;
         mat-card-title{
             font-size: 20px;
         }
@@ -89,12 +93,12 @@
 
 
 @media screen and (max-width: 500px) {
-    .title{
+    .title, .skills-title{
         width: 350px;
         margin: 20px auto;
         font-size: 16px;
     }
-    .skills {
+    .skills-wrapper {
         width: 350px;
         .skill{
             width: 70%;

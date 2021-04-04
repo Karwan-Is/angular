@@ -13,6 +13,7 @@ import { MaterialModule } from './modules/material.module';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { UsersComponent } from './components/users/users.component';
+import { LoginComponent } from './components/users/login/login.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { UsersComponent } from './components/users/users.component';
     FooterComponent,
     AboutComponent,
     ContactComponent,
-    UsersComponent
+    UsersComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

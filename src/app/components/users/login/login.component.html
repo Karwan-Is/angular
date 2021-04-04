@@ -1,0 +1,22 @@
+<div class="login">
+    <h2 mat-dialog-title>User Login</h2>
+    <form [formGroup]="loginFormGroup">
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter your email</mat-label>
+            <input matInput placeholder="email@example.com" formControlName="emailVal" required>
+            <mat-error *ngIf="loginFormGroup.get('emailVal').invalid">{{getEmailErrorMessage()}}</mat-error>
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+            <mat-label>Enter your password</mat-label>
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="passwordVal" required>
+            <mat-error *ngIf="loginFormGroup.get('passwordVal').invalid && loginFormGroup.get('passwordVal').touched">{{getPasswordErrorMessage()}}</mat-error>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <div class="buttons">
+            <button mat-raised-button (click)="handleLogin()">Login</button>
+        </div>
+    </form>
+</div>

@@ -1,6 +1,6 @@
 <header>
     <nav mat-tab-nav-bar mat-align-tabs="center">
-        <a mat-tab-link routerLink="" class="example-spacer">
+        <a mat-tab-link routerLink="" (click)="activeLink = links[0]" class="example-spacer">
             KI
         </a>
         <a mat-tab-link *ngFor="let link of links; index as i" (click)="activeLink = i" [active]="activeLink == i"

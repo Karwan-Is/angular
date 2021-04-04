@@ -1,21 +1,38 @@
 <div class="user">
-    <h2>User Login</h2>
-    <form>
-        <mat-form-field class="example-full-width">
-            <mat-label>Email</mat-label>
-            <input matInput type="email" placeholder="Ex. email@example.com">
-        </mat-form-field>
-        <mat-form-field class="example-full-width">
-            <mat-label>Enter your password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'">
-            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-                [attr.aria-pressed]="hide">
-                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-            </button>
-        </mat-form-field>
-        <div class="buttons">
-            <button mat-raised-button>Login</button>
-            <button mat-raised-button>Register</button>
+    <h2>Register</h2>
+    <form [formGroup]="loginFormGroup" (submit)="handleRegister">
+        <div class="username">
+            <mat-form-field>
+                <mat-label>First Name</mat-label>
+                <input matInput formControlName="firstNameVal" required>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Last Name</mat-label>
+                <input matInput formControlName="lastNameVal" required>
+            </mat-form-field>
         </div>
+        <div>
+            <mat-form-field class="example-full-width">
+                <mat-label>Create an  email</mat-label>
+                <input matInput placeholder="email@example.com" formControlName="emailVal" required>
+                <mat-error *ngIf="loginFormGroup.get('emailVal').invalid">{{getEmailErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+                <mat-label>Enter your password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'" formControlName="passwordVal" required>
+                <mat-error
+                    *ngIf="loginFormGroup.get('passwordVal').invalid && loginFormGroup.get('passwordVal').touched">
+                    {{getPasswordErrorMessage()}}</mat-error>
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
+                    [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+            </mat-form-field>
+        </div>
+        <button class="register" mat-raised-button>Register</button>
     </form>
+    <div class="login">
+        <mat-label>Already have an account?</mat-label>
+        <button mat-flat-button (click)="handleLogin()">Login</button>
+    </div>
 </div>

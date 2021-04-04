@@ -10,6 +10,8 @@ import { MatListModule } from '@angular/material/list';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const MaterialComponents = [
   MatTabsModule,
@@ -22,7 +24,9 @@ const MaterialComponents = [
   MatListModule,
   MatFormFieldModule,
   MatInputModule,
-  MatExpansionModule
+  MatExpansionModule,
+  MatDatepickerModule,
+  MatDialogModule
 ]
 
 @NgModule({

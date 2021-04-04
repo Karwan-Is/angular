@@ -1,18 +1,17 @@
 .skills {
-    width: 80%;
+    width: 85%;
     display: grid;
-    grid-template-columns: 45% 45%;
-    grid-column-gap: 10%;
+    grid-template-columns: 48% 48%;
+    grid-column-gap: 4%;
     grid-row-gap: 40px;
     margin: 60px auto;
     mat-card-header {
         mat-card-title {
-            padding: 20px;
+            padding: 16px 20px;
         }
         img {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 10px;
+            width: 50px;
+            height: 50px;
         }
     }
     mat-card-content {
@@ -24,7 +23,7 @@
 
 @media screen and (max-width: 900px) {
     .skills {
-        width: 70%;
+        width: 75%;
         grid-template-columns: 100%;
     }
 }
@@ -34,8 +33,7 @@
         width: 300px;
         mat-card-header {
             mat-card-title {
-                padding: 10px;
-                font-size: 16px;
+                font-size: 16px 0;
             }
             img {
                 width: 45px;

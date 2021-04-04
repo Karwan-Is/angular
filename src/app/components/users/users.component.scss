@@ -7,32 +7,39 @@
     }
 }
 
-form {
-    margin-bottom: 60px;
-    .example-full-width {
-        width: 100%;
-        margin: 15px 0;
-    }
+.example-full-width {
+    width: 100%;
+    margin: 15px 0;
+}
 
-    .buttons {
-        display: flex;
-        margin-top: 15px;
-        justify-content: space-around;
-        button {
-            width: 150px;
-        }
+.username {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    mat-label {
+        padding: 10px;
     }
 }
 
-@media screen and (max-width: 600px) {
+.register {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+}
+
+@media screen and (max-width:500px){
     .user{
         width: 300px;
     }
-    form{
-        .buttons{
-            button{
-                width: 100px;
-            }
+
+    .username{
+        mat-form-field{
+        width: 45%;
         }
     }
 }

@@ -1,0 +1,25 @@
+.login {
+    h2 {
+        text-align: center;
+    }
+    button {
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+    }
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    .example-full-width {
+        width: 100%;
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width:500px){
+    form{
+        width: 250px;
+    }
+}
