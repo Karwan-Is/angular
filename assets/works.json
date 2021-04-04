@@ -1,6 +1,20 @@
 [
     {
         "id": 1,
+        "title": "Angular",
+        "tools": [
+            "Angular",
+            "Sass"
+        ],
+        "avatar": "assets/images/angular.jpg",
+        "images": [
+            "assets/images/angular_project.png"
+        ],
+        "details": "html",
+        "link": "https://karwan-is.github.io/angular/"
+    },
+    {
+        "id": 2,
         "title": "Screen",
         "tools": [
             "React",
@@ -11,12 +25,13 @@
         ],
         "avatar": "assets/images/react.jpg",
         "images": [
-            "assets/images/html.jpg"
+            "assets/images/screen_project.png"
         ],
-        "details": "html"
+        "details": "html",
+        "link": "https://karwan-is.github.io/screen_frontend/"
     },
     {
-        "id": 2,
+        "id": 3,
         "title": "Hairdresser",
         "tools": [
             "React",
@@ -24,24 +39,26 @@
         ],
         "avatar": "assets/images/react.jpg",
         "images": [
-            "assets/images/html.jpg"
+            "assets/images/hairdresser_project.png"
         ],
-        "details": "html"
+        "details": "html",
+        "link": "https://karwan-is.github.io/react-sass-hairdresser-project/"
     },
     {
-        "id": 3,
+        "id": 4,
         "title": "Vue",
         "tools": [
             "Vue"
         ],
         "avatar": "assets/images/vue.jpg",
         "images": [
-            "assets/images/html.jpg"
+            "assets/images/vue_project.png"
         ],
-        "details": "html"
+        "details": "html",
+        "link": "https://karwan-is.github.io/vue/"
     },
     {
-        "id": 4,
+        "id": 5,
         "title": "React",
         "tools": [
             "React",
@@ -49,21 +66,9 @@
         ],
         "avatar": "assets/images/react.jpg",
         "images": [
-            "assets/images/html.jpg"
+            "assets/images/react_project.png"
         ],
-        "details": "html"
-    },
-    {
-        "id": 5,
-        "title": "Angular",
-        "tools": [
-            "Angular",
-            "Sass"
-        ],
-        "avatar": "assets/images/angular.jpg",
-        "images": [
-            "assets/images/html.jpg"
-        ],
-        "details": "html"
+        "details": "html",
+        "link": "https://karwan-is.github.io/react/"
     }
 ]
