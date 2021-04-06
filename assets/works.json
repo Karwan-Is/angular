@@ -10,8 +10,10 @@
         "images": [
             "assets/images/angular_project.png"
         ],
+        "description": "This is Angular based project",
         "details": "html",
-        "link": "https://karwan-is.github.io/angular/"
+        "link": "https://karwan-is.github.io/angular/",
+        "githubLink":"https://github.com/Karwan-Is/angular"
     },
     {
         "id": 2,
@@ -27,8 +29,10 @@
         "images": [
             "assets/images/screen_project.png"
         ],
+        "description": "This is React based project",
         "details": "html",
-        "link": "https://karwan-is.github.io/screen_frontend/"
+        "link": "https://karwan-is.github.io/screen_frontend/",
+        "githubLink":"https://github.com/Karwan-Is/react-node-jwt-sass"
     },
     {
         "id": 3,
@@ -42,7 +46,10 @@
             "assets/images/hairdresser_project.png"
         ],
         "details": "html",
-        "link": "https://karwan-is.github.io/react-sass-hairdresser-project/"
+        "description": "This is React based project",
+        "link": "https://karwan-is.github.io/react-sass-hairdresser-project/",
+        "githubLink":"https://github.com/Karwan-Is/react-sass-hairdresser-project"
+        
     },
     {
         "id": 4,
@@ -55,7 +62,10 @@
             "assets/images/vue_project.png"
         ],
         "details": "html",
-        "link": "https://karwan-is.github.io/vue/"
+        "description": "This is Vue based project",
+        "link": "https://karwan-is.github.io/vue/",
+        "githubLink":"https://github.com/Karwan-Is/vue"
+        
     },
     {
         "id": 5,
@@ -68,7 +78,9 @@
         "images": [
             "assets/images/react_project.png"
         ],
+        "description": "This is React based project",
         "details": "html",
-        "link": "https://karwan-is.github.io/react/"
+        "link": "https://karwan-is.github.io/react/",
+        "githubLink":"https://github.com/Karwan-Is/react"
     }
 ]
